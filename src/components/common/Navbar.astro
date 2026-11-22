@@ -12,7 +12,7 @@ const base = import.meta.env.BASE_URL;
   <a class={styles.logo} href={base}>LF<span class={styles.logoDot}>.</span></a>
   <div class={styles.navLinks}>
     <a href={base} class:list={[styles.link, activePage === 'home' && styles.active]}>Inicio</a>
-    <a href={`${base}academico/`} class:list={[styles.link, activePage === 'academic' && styles.active]}>Académico</a>
+    <a href={`${base}/academico/`} class:list={[styles.link, activePage === 'academic' && styles.active]}>Académico</a>
     <a href={`${base}#proyectos`} class={styles.link}>Proyectos</a>
     <a href={`${base}#contacto`} class={styles.link}>Contacto</a>
   </div>

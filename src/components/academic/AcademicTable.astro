@@ -2,19 +2,30 @@
 import styles from './AcademicTable.module.css';
 
 const rows = [
-  { subject: 'Programación', year: '2023', status: 'approved', statusLabel: 'Aprobada', grade: '9' },
-  { subject: 'Base de Datos', year: '2023', status: 'approved', statusLabel: 'Aprobada', grade: '8' },
-  { subject: 'Análisis de Sistemas', year: '2024', status: 'approved', statusLabel: 'Aprobada', grade: '9' },
-  { subject: 'Diseño de Sistemas', year: '2024', status: 'approved', statusLabel: 'Aprobada', grade: '8' },
-  { subject: 'Administración de Sistemas', year: '2025', status: 'inProgress', statusLabel: 'En curso', grade: '—' },
-  { subject: 'Inteligencia Artificial', year: '2026', status: 'inProgress', statusLabel: 'En curso', grade: '—' },
+  { subject: 'Algoritmos y Estructuras de Datos', year: '2023', status: 'approved', statusLabel: 'Aprobada', grade: '9' },
+  { subject: 'Arquitectura de Computadores', year: '2023', status: 'approved', statusLabel: 'Aprobada', grade: '7,33' },
+  { subject: 'Logica y Estructuras Discretas', year: '2023', status: 'approved', statusLabel: 'Aprobada', grade: '8,5' },
+  { subject: 'Sistemas Operativos', year: '2024', status: 'approved', statusLabel: 'Aprobada', grade: '9' },
+  { subject: 'Sintaxis y Semantica de los Lenguajes', year: '2024', status: 'approved', statusLabel: 'Aprobada', grade: '9' },
+  { subject: 'Paradigmas de Programacion', year: '2024', status: 'approved', statusLabel: 'Aprobada', grade: '6,5' },
+  { subject: 'Analisis de Sistemas de informacion', year: '2024', status: 'approved', statusLabel: 'Aprobada', grade: '6,5' },
+  { subject: 'Redes de Datos', year: '2025', status: 'approved', statusLabel: 'Aprobada', grade: '9,5' },
+  { subject: 'Bases de Datos', year: '2025', status: 'approved', statusLabel: 'Aprobada', grade: '7' },
+  { subject: 'Experiencia de Usuario y Accesibilidad', year: '2025', status: 'approved', statusLabel: 'Aprobada', grade: '8' },
+  { subject: 'Diseño de Sistemas', year: '2025', status: 'approved', statusLabel: 'Aprobada', grade: '8' },
+  { subject: 'Desarrollo de Software', year: '2025', status: 'approved', statusLabel: 'Aprobada', grade: '7,5' },
+  { subject: 'Tecnologias Avanzadas en la Construccion de Software', year: '2025', status: 'approved', statusLabel: 'Aprobada', grade: '8' },
+  { subject: 'Ciberseguridad', year: '2026', status: 'approved', statusLabel: 'Aprobada', grade: '9' },
+  { subject: 'Legislacion', year: '2026', status: 'approved', statusLabel: 'Aprobada', grade: '9' },
+  { subject: 'Ingenieria y Calidad de Software', year: '2026', status: 'approved', statusLabel: 'Aprobada', grade: '8,5' },
+  { subject: 'Ciencia de Datos', year: '2026', status: 'inProgress', statusLabel: 'En curso', grade: '—' },
+  { subject: 'Administracion de Sistemas de Informacion', year: '2026', status: 'inProgress', statusLabel: 'En curso', grade: '—' },
 ];
 ---
 <section class="section">
   <div class="section-heading">
     <p class="eyebrow">02 / HISTORIAL</p>
     <h2>Materias &amp; calificaciones</h2>
-    <p class="description">Reemplazá las materias y notas de ejemplo por tu historial real.</p>
   </div>
   <div class={styles.tableContainer}>
     <table class={styles.table}>
@@ -23,7 +34,7 @@ const rows = [
           <th>Materia</th>
           <th>Año</th>
           <th>Estado</th>
-          <th>Nota</th>
+          <th>Nota (Avg)</th>
         </tr>
       </thead>
       <tbody>
