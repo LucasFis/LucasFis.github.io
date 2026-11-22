@@ -1,7 +1,7 @@
 ---
 import styles from './Hero.module.css';
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <section class={styles.hero}>
   <div class={styles.heroContent}>
@@ -13,8 +13,8 @@ const base = import.meta.env.BASE_URL;
       de software, ciencia de datos, diseño de sistemas, arquitectura y tecnologías emergentes.
     </p>
     <div class={styles.heroButtons}>
-      <a href={`${base}#proyectos`} class="btn-primary">Ver proyectos</a>
-      <a href={`${base}#contacto`} class="btn-secondary">Contactarme</a>
+      <a href={`${base}/#proyectos`} class="btn-primary">Ver proyectos</a>
+      <a href={`${base}/#contacto`} class="btn-secondary">Contactarme</a>
     </div>
   </div>
   <div class={styles.heroCard}>
