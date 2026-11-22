@@ -1,0 +1,101 @@
+.hero {
+  min-height: 520px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 70px 0;
+}
+
+.heroContent {
+  max-width: 650px;
+}
+
+.title {
+  font-size: clamp(45px, 7vw, 76px);
+  line-height: 1.1;
+  letter-spacing: -4px;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.heroCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+}
+
+.profilePlaceholder {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #252b33;
+  color: var(--accent);
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.cardTitle {
+  margin-top: 20px;
+}
+
+.status {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 50px 0;
+  }
+
+  .title {
+    letter-spacing: -2px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+}

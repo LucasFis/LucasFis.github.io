@@ -1,0 +1,24 @@
+.contactSection {
+  padding: 40px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.link {
+  color: var(--accent);
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .contactSection {
+    padding: 25px;
+  }
+}

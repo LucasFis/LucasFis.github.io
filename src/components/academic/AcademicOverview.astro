@@ -1,0 +1,32 @@
+---
+import styles from './AcademicOverview.module.css';
+---
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">01 / RESUMEN</p>
+    <h2>Mi carrera</h2>
+  </div>
+  <div class={styles.overview}>
+    <div class:list={[styles.card, styles.main]}>
+      <p class="muted">Carrera universitaria</p>
+      <h3 class={styles.title}>Ingeniería en Sistemas de Información</h3>
+      <p>Universidad · Argentina</p>
+      <span class={styles.badge}>En curso</span>
+    </div>
+    <div class={styles.card}>
+      <p class="muted">Nivel</p>
+      <h3 class={styles.title}>4.º año</h3>
+      <p>Estudiante avanzado</p>
+    </div>
+    <div class={styles.card}>
+      <p class="muted">Promedio</p>
+      <h3 class={styles.title}>--</h3>
+      <p>Promedio general</p>
+    </div>
+    <div class={styles.card}>
+      <p class="muted">Materias aprobadas</p>
+      <h3 class={styles.title}>--</h3>
+      <p>Historial académico</p>
+    </div>
+  </div>
+</section>

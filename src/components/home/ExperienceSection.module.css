@@ -1,0 +1,35 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+.date {
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.description {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

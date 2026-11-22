@@ -1,0 +1,12 @@
+.hero {
+  padding: 90px 0 40px;
+}
+
+.title {
+  font-size: clamp(40px, 6vw, 65px);
+  letter-spacing: -3px;
+}
+
+.accent {
+  color: var(--accent);
+}

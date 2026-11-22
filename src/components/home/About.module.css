@@ -1,0 +1,16 @@
+.aboutCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+}
+
+.aboutCard p {
+  color: var(--muted);
+  margin-bottom: 15px;
+  max-width: 850px;
+}
+
+.aboutCard p:last-child {
+  margin-bottom: 0;
+}

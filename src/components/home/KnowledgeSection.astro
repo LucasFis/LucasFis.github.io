@@ -1,0 +1,31 @@
+---
+import styles from './KnowledgeSection.module.css';
+import KnowledgeCard from './KnowledgeCard.astro';
+
+const knowledgeAreas = [
+  { icon: '01', category: 'ENGINEERING', title: 'Análisis de sistemas', description: 'Análisis de requerimientos, modelado de necesidades y planificación de soluciones.', items: ['Casos de uso', 'Historias de usuario', 'Criterios de aceptación', 'PERT / CPM'] },
+  { icon: '02', category: 'DATA', title: 'Bases de datos', description: 'Diseño, administración y procesamiento de datos en sistemas relacionales y no relacionales.', items: ['MySQL / MongoDB', 'Stored Procedures, Views & Triggers', 'Streams', 'ACID & BASE', 'Sharding & Replication'] },
+  { icon: '03', category: 'ARCHITECTURE', title: 'Diseño de sistemas', description: 'Modelado estructural, diseño de software y definición de arquitectura.', items: ['Diagramas de clases', 'Patrones de diseño', 'Arquitectura de software', 'Distribución física'] },
+  { icon: '04', category: 'INFRASTRUCTURE', title: 'DevOps & infraestructura', description: 'Automatización de procesos, integración, despliegue y observabilidad.', items: ['CI/CD', 'OpenTelemetry', 'Git Flow / GitHub Flow', 'Infrastructure as Code', 'Docker'] },
+  { icon: '05', category: 'DESIGN', title: 'UX / UI', description: 'Diseño de interfaces y experiencias centradas en las necesidades de los usuarios.', items: ['Minimum Viable Product (MVP)', 'Usabilidad', 'Accesibilidad', 'Diseño centrado en el usuario'] },
+  { icon: '06', category: 'DEVELOPMENT', title: 'Full Stack development', description: 'Desarrollo de aplicaciones, servicios, interfaces e integración de tecnologías.', items: ['JavaScript / React', 'Java / Spring Boot', 'WebSockets', 'Docker', 'Agentes de desarrollo (OpenCode)', 'SWEBoK v4'] },
+  { icon: '07', category: 'METHODOLOGY', title: 'Metodologías ágiles', description: 'Organización del trabajo, gestión de iteraciones y mejora continua de procesos.', items: ['Scrum', 'Kanban', 'Gestión de iteraciones', 'Mejora continua'] },
+  { icon: '08', category: 'QUALITY', title: 'Aseguramiento de calidad', description: 'Prácticas para garantizar la calidad, confiabilidad y mantenibilidad del software.', items: ['Calidad de software', 'Verificación & validación', 'Testing', 'Buenas prácticas de desarrollo'] },
+  { icon: '09', category: 'ARTIFICIAL INTELLIGENCE', title: 'Ciencia de datos & IA', description: 'Procesamiento de datos, construcción de modelos y técnicas de aprendizaje automático.', items: ['Deep Learning', 'Feature Engineering', 'Redes neuronales convolucionales (CNN)', 'Machine Learning'] },
+  { icon: '10', category: 'SECURITY', title: 'Ciberseguridad', description: 'Principios de seguridad aplicados a los sistemas y al contexto organizacional.', items: ['Seguridad en sistemas', 'Seguridad organizacional', 'Gestión de riesgos', 'Protección de información'] },
+  { icon: '11', category: 'MANAGEMENT', title: 'Project management', description: 'Planificación, organización y coordinación de equipos y proyectos de software.', items: ['Asignación de roles', 'Enfoques de trabajo', 'Planificación de proyectos', 'Gestión de recursos'] },
+];
+---
+<section class="section" id="conocimientos">
+  <div class="section-heading">
+    <p class="eyebrow">02 / KNOWLEDGE</p>
+    <h2>Áreas de conocimiento</h2>
+    <p class="description">
+      Formación integral en ingeniería de software, desarrollo, arquitectura,
+      datos y gestión de proyectos.
+    </p>
+  </div>
+  <div class={styles.grid}>
+    {knowledgeAreas.map((area) => <KnowledgeCard {...area} />)}
+  </div>
+</section>

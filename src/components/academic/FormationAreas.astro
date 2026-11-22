@@ -1,0 +1,26 @@
+---
+import styles from './FormationAreas.module.css';
+
+const areas = [
+  { title: 'Ingeniería de software', description: 'Requerimientos, análisis, diseño, testing, metodologías ágiles y calidad de software.' },
+  { title: 'Desarrollo', description: 'Programación, desarrollo web, backend, frontend y diseño de APIs.' },
+  { title: 'Datos', description: 'SQL, bases relacionales, NoSQL, modelado de datos y procesamiento.' },
+  { title: 'Infraestructura', description: 'Redes, sistemas operativos, virtualización, Docker, CI/CD y despliegue.' },
+  { title: 'Inteligencia artificial', description: 'Machine learning, procesamiento de datos, clasificación, métricas y modelos predictivos.' },
+  { title: 'Gestión', description: 'Planificación, estimación, riesgos, gestión de proyectos y toma de decisiones.' },
+];
+---
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">03 / CONOCIMIENTOS</p>
+    <h2>Áreas de formación</h2>
+  </div>
+  <div class={styles.grid}>
+    {areas.map((area) => (
+      <div class={styles.card}>
+        <h3 class={styles.title}>{area.title}</h3>
+        <p class="muted">{area.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,41 @@
+---
+import styles from './AcademicTable.module.css';
+
+const rows = [
+  { subject: 'Programación', year: '2023', status: 'approved', statusLabel: 'Aprobada', grade: '9' },
+  { subject: 'Base de Datos', year: '2023', status: 'approved', statusLabel: 'Aprobada', grade: '8' },
+  { subject: 'Análisis de Sistemas', year: '2024', status: 'approved', statusLabel: 'Aprobada', grade: '9' },
+  { subject: 'Diseño de Sistemas', year: '2024', status: 'approved', statusLabel: 'Aprobada', grade: '8' },
+  { subject: 'Administración de Sistemas', year: '2025', status: 'inProgress', statusLabel: 'En curso', grade: '—' },
+  { subject: 'Inteligencia Artificial', year: '2026', status: 'inProgress', statusLabel: 'En curso', grade: '—' },
+];
+---
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">02 / HISTORIAL</p>
+    <h2>Materias &amp; calificaciones</h2>
+    <p class="description">Reemplazá las materias y notas de ejemplo por tu historial real.</p>
+  </div>
+  <div class={styles.tableContainer}>
+    <table class={styles.table}>
+      <thead>
+        <tr>
+          <th>Materia</th>
+          <th>Año</th>
+          <th>Estado</th>
+          <th>Nota</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr>
+            <td>{row.subject}</td>
+            <td>{row.year}</td>
+            <td><span class={styles[row.status]}>{row.statusLabel}</span></td>
+            <td>{row.grade}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</section>

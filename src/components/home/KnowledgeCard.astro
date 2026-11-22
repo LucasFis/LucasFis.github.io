@@ -1,0 +1,24 @@
+---
+import styles from './KnowledgeCard.module.css';
+
+interface Props {
+  icon: string;
+  category: string;
+  title: string;
+  description: string;
+  items: string[];
+}
+
+const { icon, category, title, description, items } = Astro.props;
+---
+<article class={styles.card}>
+  <div class={styles.header}>
+    <span class={styles.icon}>{icon}</span>
+    <span class={styles.category}>{category}</span>
+  </div>
+  <h3 class={styles.title}>{title}</h3>
+  <p class={styles.description}>{description}</p>
+  <ul class={styles.list}>
+    {items.map((item) => <li class={styles.item}>{item}</li>)}
+  </ul>
+</article>

@@ -1,0 +1,26 @@
+---
+import styles from './CoursesTimeline.module.css';
+
+const courses = [
+  { year: '2026', title: 'Nombre del curso o certificación', place: 'Institución / Plataforma', description: 'Descripción breve de los conocimientos adquiridos.' },
+  { year: '2025', title: 'Nombre del curso', place: 'Institución / Plataforma', description: 'Descripción breve de la capacitación.' },
+];
+---
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">04 / COMPLEMENTARIO</p>
+    <h2>Cursos &amp; certificaciones</h2>
+  </div>
+  <div class={styles.timeline}>
+    {courses.map((course) => (
+      <div class={styles.item}>
+        <span class={styles.date}>{course.year}</span>
+        <div>
+          <h3 class={styles.title}>{course.title}</h3>
+          <p class="muted">{course.place}</p>
+          <p class={styles.description}>{course.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
