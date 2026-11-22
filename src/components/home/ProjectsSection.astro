@@ -2,15 +2,19 @@
 import styles from './ProjectsSection.module.css';
 
 const projects = [
-  { number: '01', type: 'Full Stack', title: 'Sistema de gestión', description: 'Aplicación orientada a la gestión de clientes, proyectos, documentación y recursos de una organización.', tags: ['Java', 'Spring', 'MySQL'], href: '#' },
-  { number: '02', type: 'Data Science', title: 'Clasificación de sentimientos', description: 'Modelo de machine learning para analizar opiniones y clasificar sentimientos a partir de textos.', tags: ['Python', 'Scikit-learn', 'NLP'], href: '#' },
-  { number: '03', type: 'Software Engineering', title: 'Diseño de sistemas', description: 'Análisis funcional, modelado, arquitectura, planificación y diseño de soluciones de software.', tags: ['UML', 'Scrum', 'Arquitectura'], href: '#' },
+  { number: '01', type: 'Full Stack', title: 'Figunett', description: 'Aplicacion orientada al cambio de figuritas del mundial', tags: ['Java', 'Spring', 'MongoDB'], href: 'https://github.com/LucasFis/TACS-Grupo4' },
+  { number: '02', type: 'Data Science', title: 'Clasificación de sentimientos', description: 'Modelo de machine learning para analizar opiniones y clasificar sentimientos a partir de tweets.', tags: ['Python', 'Scikit-learn'], href: 'https://github.com/LucasFis/Tp_tweets' },
+  { number: '03', type: 'Operative System', title: 'Simulacion de kernel', description: 'Manejo de procesos, memoria, CPU y I/O del sistema operativo.', tags: ['OS', 'Memory'], href: 'https://github.com/LucasFis/TP-SO' },
+  { number: '04', type: 'Data Base', title: 'Migracion de datos', description: 'Validacion de tipos, limpieza y estandarizacion, modelado UML y procedures', tags: ['SQL', 'Triggers', 'Backups'], href: 'https://github.com/FeliFemenia/TpBaseDeDatos' },
 ];
 ---
 <section class="section" id="proyectos">
   <div class="section-heading">
     <p class="eyebrow">03 / TRABAJO</p>
     <h2>Proyectos destacados</h2>
+    <p>
+      Todos estos proyectos formaron parte de mi formacion profesional, y fueron realizados en equipo.
+    </p>
   </div>
   <div class={styles.grid}>
     {projects.map((project) => (
