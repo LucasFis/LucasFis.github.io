@@ -20,5 +20,5 @@ npm run preview
 
 El sitio se despliega automáticamente a GitHub Pages con GitHub Actions al hacer push a `main`.
 
-- URL esperada: `https://lucasfis.github.io/fiscella/`
+- URL esperada: `https://lucasfis.github.io/`
 - Configuración de Pages: **Settings > Pages > Source = GitHub Actions**

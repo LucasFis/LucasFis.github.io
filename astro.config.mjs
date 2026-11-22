@@ -2,5 +2,5 @@
 
 export default defineConfig({
   site: 'https://lucasfis.github.io',
-  base: '/fiscella',
+  base: '/',
 });
