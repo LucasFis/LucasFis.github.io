@@ -9,7 +9,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <h1 class={styles.title}>Hola, soy <span class={styles.accent}>Lucas Fiscella.</span></h1>
     <h2 class={styles.subtitle}>Desarrollo soluciones a través de la tecnología.</h2>
     <p class="description">
-      Estudiante de Ingeniería en Sistemas de Información, interesado en el desarrollo
+      Estudiante de Ingeniería en Sistemas de Información, con reconocimiento por UTN FRBA en <b>construccion avanzada de software</b>. Interesado en el desarrollo
       de software, ciencia de datos, diseño de sistemas, arquitectura y tecnologías emergentes.
     </p>
     <div class={styles.heroButtons}>
@@ -17,10 +17,15 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <a href={`${base}/#contacto`} class="btn-secondary">Contactarme</a>
     </div>
   </div>
-  <div class={styles.heroCard}>
-    <div class={styles.profilePlaceholder}>LF</div>
-    <p class={styles.status}><span class={styles.dot}></span> Disponible para oportunidades</p>
-    <h3 class={styles.cardTitle}>Software Engineer</h3>
-    <p class="muted">Buenos Aires, Argentina</p>
+
+  <div class={styles.heroVisual}>
+    <div class={styles.portraitWrap}>
+      <img src={`${base}/yo.jpg`} alt="Retrato de Lucas Fiscella" class={styles.portrait} />
+      <p class={styles.status}><span class={styles.dot}></span> Disponible para oportunidades</p>
+    </div>
+    <div class={styles.roleCard}>
+      <h3 class={styles.cardTitle}>Software Engineer</h3>
+      <p class="muted">Buenos Aires, Argentina</p>
+    </div>
   </div>
 </section>
